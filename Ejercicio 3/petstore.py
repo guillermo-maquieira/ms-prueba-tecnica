@@ -12,10 +12,8 @@ def sold_pets(r):
             pass
     return data
 
-
 def pet_names(name):
     names.append(name)
-
 
 r = requests.get('https://petstore.swagger.io/v2/pet/findByStatus?status=sold', auth=('test','abc123'))
 pets = sold_pets(r)
